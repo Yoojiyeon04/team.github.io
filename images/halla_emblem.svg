@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100%" height="100%">
+  <defs>
+    <!-- 방패 베이스 그라데이션 -->
+    <linearGradient id="shieldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="35%" stop-color="#142c44"/>
+      <stop offset="70%" stop-color="#0f2035"/>
+      <stop offset="100%" stop-color="#07111e"/>
+    </linearGradient>
+
+    <!-- 외곽 실버/스틸 테두리 -->
+    <linearGradient id="shieldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8ba1b7"/>
+      <stop offset="50%" stop-color="#415a77"/>
+      <stop offset="100%" stop-color="#1b2a4a"/>
+    </linearGradient>
+
+    <!-- 시안/블루 3 이니셜 -->
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <!-- 골드 악센트 -->
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 방패 외곽 그림자 -->
+  <path d="M10 14 C10 14 50 4 50 4 C50 4 90 14 90 14 C90 74 50 112 50 116 C50 112 10 74 10 14 Z" 
+        fill="rgba(0,0,0,0.18)" transform="translate(0, 2)"/>
+
+  <!-- 메인 방패 바디 -->
+  <path d="M10 14 C10 14 50 4 50 4 C50 4 90 14 90 14 C90 74 50 112 50 116 C50 112 10 74 10 14 Z" 
+        fill="url(#shieldBg)" stroke="url(#shieldBorder)" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- 방패 내부 음각 라인 -->
+  <path d="M17 19 C17 19 50 11 50 11 C50 11 83 19 83 19 C83 69 50 102 50 105 C50 102 17 69 17 19 Z" 
+        fill="none" stroke="#253e56" stroke-width="1.5" stroke-dasharray="none"/>
+
+  <!-- 30주년 그래픽 및 H 엠블럼 -->
+  <!-- 숫자 3 (Cyan Gradient) -->
+  <path d="M30 38 C30 32 36 29 42 29 C48 29 52 32 52 37 C52 41 48 44 44 45 C49 46 53 50 53 55 C53 62 46 66 39 66 C32 66 28 61 28 56 L35 56 C35 59 38 61 40 61 C43 61 46 59 46 55 C46 51 42 49 39 49 L36 49 L36 44 L39 44 C42 44 45 42 45 38 C45 35 43 33 40 33 C37 33 35 35 35 38 Z"
+        fill="url(#cyanAccent)" transform="translate(-8, -2)"/>
+
+  <!-- 숫자 0 (White/Silver) -->
+  <path d="M56 46 C56 34 62 27 70 27 C78 27 84 34 84 46 C84 58 78 65 70 65 C62 65 56 58 56 46 Z M63 46 C63 55 66 60 70 60 C74 60 77 55 77 46 C77 37 74 32 70 32 C66 32 63 37 63 46 Z"
+        fill="#ffffff" transform="translate(-14, 0)"/>
+
+  <!-- 상단 골드 스타/포인트 -->
+  <polygon points="50,20 52,24 56,25 53,28 54,32 50,30 46,32 47,28 44,25 48,24" fill="url(#goldAccent)"/>
+
+  <!-- 중앙 골드 구분선 -->
+  <line x1="26" y1="72" x2="74" y2="72" stroke="url(#goldAccent)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- HALLA 영문 레터링 -->
+  <text x="50" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="10.5" font-weight="800" fill="#e2e8f0" text-anchor="middle" letter-spacing="2.5">HALLA</text>
+
+  <!-- UNIVERSITY 서브 레터링 -->
+  <text x="50" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="6.5" font-weight="700" fill="#94a3b8" text-anchor="middle" letter-spacing="1.5">UNIVERSITY</text>
+</svg>
